@@ -8,16 +8,10 @@ public class Player : MonoBehaviour
     public Transform enemyTransform;
     public GameObject bombPrefab;
     public Transform bombsTransform;
-    float moveSpeed = 0.5f;
+    public float moveSpeed = 10.0f;
 
     void Update()
     {
-
-    }
-
-    private void FixedUpdate()
-    {
-
         Vector3 offset = Vector3.zero;
         if (Input.GetKey(KeyCode.LeftArrow))
             offset += Vector3.left * moveSpeed;
@@ -33,6 +27,6 @@ public class Player : MonoBehaviour
 
     void PlayerMovement(Vector3 offset)
     {
-        transform.position += offset;
+        transform.position += offset * Time.deltaTime;
     }
 }
