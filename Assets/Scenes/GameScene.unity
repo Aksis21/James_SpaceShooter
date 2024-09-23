@@ -1275,6 +1275,126 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.size
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[0]
+      value: 
+      objectReference: {fileID: 8290172159699651920}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[1]
+      value: 
+      objectReference: {fileID: 1177087840}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[2]
+      value: 
+      objectReference: {fileID: 604982759}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[3]
+      value: 
+      objectReference: {fileID: 32895168}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[4]
+      value: 
+      objectReference: {fileID: 1921111291}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[5]
+      value: 
+      objectReference: {fileID: 1179099642}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[6]
+      value: 
+      objectReference: {fileID: 1139510379}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[7]
+      value: 
+      objectReference: {fileID: 642444657}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[8]
+      value: 
+      objectReference: {fileID: 1254756013}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[9]
+      value: 
+      objectReference: {fileID: 1554417271}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[10]
+      value: 
+      objectReference: {fileID: 909663185}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[11]
+      value: 
+      objectReference: {fileID: 341439129}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[12]
+      value: 
+      objectReference: {fileID: 970509641}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[13]
+      value: 
+      objectReference: {fileID: 929220948}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[14]
+      value: 
+      objectReference: {fileID: 1272068327}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[15]
+      value: 
+      objectReference: {fileID: 1621341333}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[16]
+      value: 
+      objectReference: {fileID: 154511008}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[17]
+      value: 
+      objectReference: {fileID: 523098047}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[18]
+      value: 
+      objectReference: {fileID: 335762729}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[19]
+      value: 
+      objectReference: {fileID: 503729236}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[20]
+      value: 
+      objectReference: {fileID: 509018416}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[21]
+      value: 
+      objectReference: {fileID: 8290172159699651920}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[22]
+      value: 
+      objectReference: {fileID: 374154892}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[23]
+      value: 
+      objectReference: {fileID: 1159800441}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[24]
+      value: 
+      objectReference: {fileID: 1117140676}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[25]
+      value: 
+      objectReference: {fileID: 1269331787}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[26]
+      value: 
+      objectReference: {fileID: 1442887649}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[27]
+      value: 
+      objectReference: {fileID: 850833618}
+    - target: {fileID: 114516115454935764, guid: e3900e4d87ee29c43ad1d9098b51432c, type: 3}
+      propertyPath: asteroidTransform.Array.data[28]
+      value: 
+      objectReference: {fileID: 1989142276}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1319,7 +1439,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8290172159699651920}
   - {fileID: 1177087840}
   - {fileID: 604982759}
   - {fileID: 32895168}
@@ -1340,6 +1459,7 @@ Transform:
   - {fileID: 335762729}
   - {fileID: 503729236}
   - {fileID: 509018416}
+  - {fileID: 8290172159699651920}
   - {fileID: 374154892}
   - {fileID: 1159800441}
   - {fileID: 1117140676}
@@ -3070,7 +3190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6890330259706833056, guid: abc125f00ae369940b2c5c0275186637, type: 3}
       propertyPath: maxSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6890330259706833056, guid: abc125f00ae369940b2c5c0275186637, type: 3}
       propertyPath: moveSpeed
