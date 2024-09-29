@@ -12,6 +12,10 @@ public class Player : MonoBehaviour
     public float accelerationTime = 1f;
     float moveSpeed = 0f;
 
+    public float radarRadius = 1f;
+    public int radiusPoints = 5;
+    Color radarColor;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow))
@@ -36,10 +40,35 @@ public class Player : MonoBehaviour
         offset = offset.normalized * Mathf.Clamp(offset.magnitude, 0, maxSpeed);
 
         PlayerMovement(offset);
+
+        EnemyRadar(radarRadius, radiusPoints);
     }
 
     void PlayerMovement(Vector3 offset)
     {
         transform.position += offset * Time.deltaTime;
+    }
+
+    public void EnemyRadar(float radius, int circlePoints)
+    {
+        float radarAngle = 360 / circlePoints * Mathf.Deg2Rad;
+
+        List<Vector3> radarPoints = new List<Vector3>();
+        for (int i = 0; i < circlePoints + 1; i++)
+        {
+            Vector3 radPoint = new Vector3(Mathf.Cos(i * radarAngle), Mathf.Sin(i * radarAngle)) * radius;
+            radPoint += transform.position;
+            radarPoints.Add(radPoint);
+        }
+
+        Vector3 enemyDistance = transform.position - enemyTransform.position;
+
+        if (enemyDistance.magnitude < radius)
+            radarColor = Color.red;
+        else
+            radarColor = Color.green;
+
+        for (int i = 0; i < radarPoints.Count - 1; i++)
+            Debug.DrawLine(radarPoints[i], radarPoints[i+1], radarColor);
     }
 }
