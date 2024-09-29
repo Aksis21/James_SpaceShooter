@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
     public int radiusPoints = 5;
     Color radarColor;
 
+    public GameObject powerupPrefab;
+    public float powerupRadius = 1f;
+    public int powerupsCount = 5;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow))
@@ -42,6 +46,9 @@ public class Player : MonoBehaviour
         PlayerMovement(offset);
 
         EnemyRadar(radarRadius, radiusPoints);
+
+        if (Input.GetKeyDown(KeyCode.P))
+            SpawnPowerups(powerupRadius, powerupsCount);
     }
 
     void PlayerMovement(Vector3 offset)
@@ -70,5 +77,21 @@ public class Player : MonoBehaviour
 
         for (int i = 0; i < radarPoints.Count - 1; i++)
             Debug.DrawLine(radarPoints[i], radarPoints[i+1], radarColor);
+    }
+
+    public void SpawnPowerups(float radius, int numberOfPowerups)
+    {
+        float powerupAngle = 360 / numberOfPowerups * Mathf.Deg2Rad;
+
+        List<Vector3> powerupPoints = new List<Vector3>();
+        for (int i = 0; i < numberOfPowerups; i++)
+        {
+            Vector3 powerPoint = new Vector3(Mathf.Cos(i * powerupAngle), Mathf.Sin(i * powerupAngle)) * radius;
+            powerPoint += transform.position;
+            powerupPoints.Add(powerPoint);
+        }
+
+        for (int i = 0; i < numberOfPowerups; i++)
+            Instantiate(powerupPrefab, powerupPoints[i], Quaternion.identity);
     }
 }
