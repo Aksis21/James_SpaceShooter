@@ -20,6 +20,10 @@ public class Player : MonoBehaviour
     public float powerupRadius = 1f;
     public int powerupsCount = 5;
 
+    //Assignment, mechanic 1
+    public float angularSpeed = 45f;
+    float targetAngle;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow))
@@ -49,6 +53,26 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
             SpawnPowerups(powerupRadius, powerupsCount);
+
+        //Assignment, mechanic 1.
+        Vector3 playerToTarget = enemyTransform.position - transform.position;
+        targetAngle = Mathf.Atan2(playerToTarget.y, playerToTarget.x) * Mathf.Rad2Deg;
+
+        float currentRotation = transform.rotation.eulerAngles.z + 90;
+
+        currentRotation = StandardizeAngle(currentRotation);
+        targetAngle = StandardizeAngle(targetAngle);
+
+        if (targetAngle - currentRotation < 0)
+        {
+            if (currentRotation > targetAngle)
+                transform.Rotate(0, 0, -angularSpeed * Time.deltaTime);
+        }
+        else
+        {
+            if (currentRotation < targetAngle)
+                transform.Rotate(0, 0, angularSpeed * Time.deltaTime);
+        }
     }
 
     void PlayerMovement(Vector3 offset)
@@ -93,5 +117,19 @@ public class Player : MonoBehaviour
 
         for (int i = 0; i < numberOfPowerups; i++)
             Instantiate(powerupPrefab, powerupPoints[i], Quaternion.identity);
+    }
+
+    public float StandardizeAngle(float inAngle)
+    {
+        inAngle %= 360;
+
+        inAngle = (inAngle + 360) % 360;
+
+        if (inAngle > 360)
+        {
+            inAngle -= 360;
+        }
+
+        return inAngle;
     }
 }
