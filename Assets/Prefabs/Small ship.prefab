@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2745013647050597769}
   - component: {fileID: 1442617055136291672}
   - component: {fileID: 1825287174587361037}
+  - component: {fileID: 8793884832917224780}
   m_Layer: 0
   m_Name: Small ship
   m_TagString: Untagged
@@ -98,5 +99,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  moveSpeed: 2
   angularSpeed: 1000
+--- !u!114 &8793884832917224780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529303663894348762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25d8a976e6fa84e964e4f739922f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackHole: {fileID: 0}

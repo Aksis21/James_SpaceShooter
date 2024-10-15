@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4810190612781865404}
   - component: {fileID: 8382019928816532762}
+  - component: {fileID: 9066560622640300942}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -46,8 +47,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetTransform: {fileID: 596075294928896946}
-  orbitRadius: 1.5
   orbitSpeed: 60
+  orbitRadius: 1.5
+--- !u!114 &9066560622640300942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378631089131628727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25d8a976e6fa84e964e4f739922f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackHole: {fileID: 0}
 --- !u!1 &859344701623534545
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,6 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 596075294928896946}
+  - component: {fileID: 8900605634396964905}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -80,6 +95,19 @@ Transform:
   - {fileID: 4041703856298300061}
   m_Father: {fileID: 3695347650650143362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8900605634396964905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859344701623534545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a25d8a976e6fa84e964e4f739922f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackHole: {fileID: 0}
 --- !u!1 &2301990505270886567
 GameObject:
   m_ObjectHideFlags: 0
